@@ -1,6 +1,4 @@
-## Welcome to ***Terreate***
-license : [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)\
-\
+## Welcome to ***Terreate Wiki***
 Welcome to the ***Terreate*** documentation. This documentation is intended to provide a comprehensive guide to the ***Terreate*** platform, including its features, capabilities, and how to use it.
 
 ## What is *Terreate*
