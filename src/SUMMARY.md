@@ -2,6 +2,7 @@
 - [What is Terreate](intro/terreate.md)
 - [Dependences](intro/deps.md)
 - [How to build](intro/build.md)
+- [License](intro/license.md)
 
 # How to use Terreate
 - [Make a window](window.md)
