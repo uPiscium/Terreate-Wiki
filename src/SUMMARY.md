@@ -5,7 +5,7 @@
 - [License](intro/license.md)
 
 # How to use Terreate(WIP)
-- [Make a window](guide/window.md)
+- [Create a window](guide/window.md)
 - [Draw polygons](guide/draw-poly.md)
 - [Polygon with texture](guide/poly-with-texture.md)
 - [Draw texts](guide/text.md)
