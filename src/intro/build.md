@@ -20,7 +20,7 @@ cmake --build build
 ```
 
 ## Linux
-**Make sure you have the dependencies installed before building.**
+**Make sure you have the [dependencies](./deps.md) installed before building.**
 ```shell
 cd <PATH TO CLONED/UNZIPPED REPOSITORY>
 cmake -S . -B build
