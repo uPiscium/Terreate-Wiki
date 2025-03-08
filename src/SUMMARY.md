@@ -9,15 +9,24 @@
 - [Draw polygons](guide/draw-poly.md)
 - [Polygon with texture](guide/poly-with-texture.md)
 - [Draw texts](guide/text.md)
+- [Off screen rendering with Screen](guide/screen.md)
 - [Assign shader variables](guide/assign-shader-vars.md)
 - [Use uniform buffers (UBO)](guide/use-ubo.md)
 - [Use shader storage buffers (SSBO)](guide/use-ssbo.md)
 - [Use multiple windows](guide/multiple-window.md)
+- [Use multi-thread executor](guide/executor.md)
 - [Hook with window callbacks](guide/window-callback.md)
 - [Handle audio](guide/audio.md)
 - [Use icons & cursors](guide/icon-cursor.md)
 - [Handle joysticks/gamepads](guide/joystick-gamepad.md)
 - [Load external models (WIP)](guide/load-model.md)
+
+# Advanced guide
+- [Create custom Entity](advanced/custom-entity.md)
+- [Create custom event](advanced/custom-event.md)
+- [Create custom resource & manager](advanced/custom-resource.md)
+- [Create custom model importer](advanced/custom-importer.md)
+- [Calculation with GPGPU](advanced/gpgpu.md)
 
 # API
 - [Audio](api/audio.md)
