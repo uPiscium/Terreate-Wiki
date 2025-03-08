@@ -4,7 +4,7 @@
 - [How to build](intro/build.md)
 - [License](intro/license.md)
 
-# How to use Terreate
+# How to use Terreate(WIP)
 - [Make a window](guide/window.md)
 - [Draw polygons](guide/draw-poly.md)
 - [Polygon with texture](guide/poly-with-texture.md)
@@ -21,16 +21,16 @@
 - [Handle joysticks/gamepads](guide/joystick-gamepad.md)
 - [Load external models (WIP)](guide/load-model.md)
 
-# Advanced guide
+# Advanced guide(WIP)
 - [Create custom Entity](advanced/custom-entity.md)
 - [Create custom event](advanced/custom-event.md)
 - [Create custom resource & manager](advanced/custom-resource.md)
 - [Create custom model importer](advanced/custom-importer.md)
 - [Calculation with GPGPU](advanced/gpgpu.md)
 
-# API
+# API(WIP)
 - [Audio](api/audio.md)
   - [AudioSource](api/audio/audiosource.md)
   - [AudioListener](api/audio/audiolistener.md)
 - [Graphic](api/graphic.md)
-  - [xxx](api/graphic/xxx.md)
+  - [window](api/graphic/window.md)
