@@ -7,7 +7,7 @@ In this section, we'll create a simple single window application.
 - [x] Handling window with context object
 - [x] Use simple frame callback
 
-## Window, Context, Context handler
+## What is Window, Context, Context handler?
 The first thing we need to do is create an application window. In `Terreate`, windows are controlled by ***Context*** objects. Each context object has one glfw window object, and you can control it through the context object. Contexts also have its own thread called *Context thread*, which is used to run a rendering function, called *frame function*, in each frame.
 ![window description image](../images/guide/window-description.png)
 
