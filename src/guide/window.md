@@ -1,3 +1,6 @@
+## Intro
+In this section, we'll create a simple single window application.
+
 ## Contents
 - [x] Create context handler
 - [x] Create context object
@@ -19,7 +22,7 @@ Now, let's code!
 
 bool Frame(Terreate::Context *ctx) {
   auto *window = ctx->window;
-  window->Fill(0, 0, 0);
+  window->Fill(0.5, 0.5, 0);
   window->Clear();
   window->Swap();
   return true;
@@ -37,4 +40,22 @@ int main() {
   return 0;
 }
 ```
-First, we see the `Frame` function, but we'll skip it for now. After that, `main` is defined. In the first line of the `main` function, line 29, a `ContextHandler` instance is created. Then, we create a new context via the `handler` variable. The `CreateContext` function is a builder function for the `Context` class, and its arguments are `width`, `height`, and `title`. If you want to know about the detail of this, see API section.
+First, we see the `Frame` function, but we'll skip it for now. After that, `main` is defined.
+
+In the first line of the `main` function, line 12, a `ContextHandler` instance is created. Then, we create a new context via the `handler` variable. 
+
+The `CreateContext` function is a builder function for the `Context` class and takes the following arguments: `width`, `height`, and `title`. For more information about this function, see the [Window API](../api/window.md) section.
+
+Moving on to the next step: On line 15, the context starts the rendering thread using `Frame` as its *frame function*. Let's take a look at the steps in the `Frame` function:
+1. Fill the window with yellow. (rgb(0.5, 0.5, 0))
+1. Clear the window buffer
+1. Swap the window buffer
+This is a minimal implementation of the *frame function*.
+
+Finally, lines 17 to 19 run an event polling loop on the main thread until the application stops.
+
+Now, build your project and run your application file, you will see a window filled with yellow in front of you.
+![yellow window](../images/guide/yellow-window.png)
+
+## Next step
+[Draw polygons](./draw-poly.md)
