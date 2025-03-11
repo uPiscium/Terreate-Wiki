@@ -12,6 +12,14 @@ Like many other objects in Terreate, joystick and gamepad also have wrapper clas
 #include <Terreate/Terreate.hpp>
 
 bool Frame(Terreate::Context *ctx) {
-  ;
+  ctx->Fill(0, 0, 0);
+  ctx->Clear();
+
+  auto joystick_state = Terreate::Joystick::GetJoystick(JoystickID::JOYSTICK1);
+  auto axes = joystick_state.GetAxisState();
+  auto buttons = joystick_state.GetButtonState();
+  auto hats = joystick_state.GetHatState();
+
+  ctx->Swap();
 }
 ```
