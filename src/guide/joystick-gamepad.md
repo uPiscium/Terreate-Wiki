@@ -9,5 +9,9 @@ In some video games, like fps or open world, we can control player character wit
 ## Handle joystick and gamepad
 Like many other objects in Terreate, joystick and gamepad also have wrapper class. You can get its states with it.
 ```cpp
+#include <Terreate/Terreate.hpp>
 
+bool Frame(Terreate::Context *ctx) {
+  ;
+}
 ```
