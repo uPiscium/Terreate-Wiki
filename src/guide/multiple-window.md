@@ -9,9 +9,26 @@ As I mentioned in the [Create a window section](./window.md), contexts have its 
 ```cpp
 #include <Terreate/Terreate.hpp>
 
-bool Frame(Terreate::Context *ctx) {
+bool FrameRed(Terreate::Context *ctx) {
   auto *window = ctx->window;
-  window->Fill(0.5, 0.5, 0);
+  window->Fill(0.8, 0.0, 0);
+  window->Clear();
+  window->Swap();
+  return true;
+}
+
+bool FrameGreen(Terreate::Context *ctx) {
+  auto *window = ctx->window;
+  window->Fill(0, 0.8, 0);
+  window->Clear();
+  window->Swap();
+  return true;
+}
+
+
+bool FrameBlue(Terreate::Context *ctx) {
+  auto *window = ctx->window;
+  window->Fill(0, 0, 0.5);
   window->Clear();
   window->Swap();
   return true;
@@ -19,9 +36,13 @@ bool Frame(Terreate::Context *ctx) {
 
 int main() {
   Terreate::ContextHandler handler;
-  auto context = handler.CreateContext(800, 600, "Terreate guide");
+  auto red_context = handler.CreateContext(800, 600, "Red screen");
+  auto green_context = handler.CreateContext(800, 600, "Green screen");
+  auto blue_context = handler.CreateContext(800, 600, "Blue screen");
 
-  context->Run(Frame);
+  red_context->Run(FrameRed);
+  green_context->Run(FrameGreen);
+  blue_context->Run(FrameBlue);
 
   while (handler->IsRunning()) {
     handler->PollEvents();
@@ -29,3 +50,8 @@ int main() {
   return 0;
 }
 ```
+
+Then build and run this program, you can see three windows filled with red, green, and blue.
+
+## Next step
+- []()
