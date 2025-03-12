@@ -22,4 +22,15 @@ bool Frame(Terreate::Context *ctx) {
 
   ctx->Swap();
 }
+
+int main() {
+  Terreate::ContextHandler handler;
+  auto context = handler.Create(800, 600, "Joystick and Gamepad test");
+
+  context->Run(Frame);
+  while (handler.IsRunning()) {
+    glfwPollEvents();
+  }
+  return 0;
+}
 ```
