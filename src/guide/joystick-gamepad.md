@@ -27,22 +27,12 @@ bool Frame(Terreate::Context *ctx) {
   auto buttons = joystick.GetButtonState();
   auto hats = joystick.GetHatState();
 
-  std::cout << "Left Stick: (" << std::fixed << std::setprecision(3)
-     << axisState.leftStick[0] << ", " << axisState.leftStick[1] << ")" << " / Right Stick: (" << std::fixed << std::setprecision(3)
-     << axisState.rightStick[0] << ", " << axisState.rightStick[1] << ")" << std::endl;
-  std::cout << std::fixed << std::setprecision(3)
-     << "Left Trigger: " << axisState.leftTrigger
-     << " / Right Trigger: " << axisState.rightTrigger << std::endl;
-
-  std::cout << "A: " << buttonState.a << " / B: " << buttonState.b
-     << " / X: " << buttonState.x << " / Y: " << buttonState.y << std::endl;
-  std::cout << " / Cross: " << buttonState.cross << " / Circle: " << buttonState.circle
-     << " / Square: " << buttonState.square
-     << " / Triangle: " << buttonState.triangle << std::endl;
-
-  std::cout << "Left Bumper: " << buttonState.leftBumper
-     << " / Right Bumper: " << buttonState.rightBumper
-     << " / Back: " << buttonState.back << " / Start: " << buttonState.start
+  std::cout << "Stick: L(" << std::fixed << std::setprecision(3) << axisState.leftStick[0] << ", " << axisState.leftStick[1] << ") / R(" << axisState.rightStick[0] << ", " << axisState.rightStick[1] << ")" << std::endl;
+  std::cout << std::fixed << std::setprecision(3) << "Trigger: L(" << axisState.leftTrigger << ") / R(" << axisState.rightTrigger << ")" << std::endl;
+  std::cout << "A: " << buttonState.a << " / B: " << buttonState.b << " / X: " << buttonState.x << " / Y: " << buttonState.y << std::endl;
+  std::cout << " / Cross: " << buttonState.cross << " / Circle: " << buttonState.circle << " / Square: " << buttonState.square << " / Triangle: " << buttonState.triangle << std::endl;
+  std::cout << "Bumper: L(" << buttonState.leftBumper << ") / R(" << buttonState.rightBumper << ")" std::endl;
+" / Back: " << buttonState.back << " / Start: " << buttonState.start
      << " / Guide: " << buttonState.guide
      << " / Left Thumb: " << buttonState.leftThumb
      << " / Right Thumb: " << buttonState.rightThumb << std::endl;
