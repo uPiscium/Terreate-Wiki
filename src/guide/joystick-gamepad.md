@@ -59,4 +59,4 @@ int main() {
   return 0;
 }
 ```
-Now, build your project and run your application file, you will see the states of joystick or gamepad if you connect it in command line. Otherwise, there are only a word "Disconnected".
+Now, build your project and run your application file, you will see the states of joystick or gamepad in command line if you connect it. Otherwise, there are only a word "Disconnected".
