@@ -5,3 +5,18 @@ There are many properties that the window has like its position or size. In this
 - [x] Use window callbacks with custom events
 
 # Hook with window callbacks
+```cpp
+#include <Terreate/Terreate.hpp>
+
+bool 
+
+int main() {
+  Terreate::ContextHandler handler;
+  auto context = handler.CreateContext(800, 600, "Terreate guide");
+
+  context->Run(Frame);
+
+  while (handler->IsRunning()) {
+    handler->PollEvents();
+  }
+  return 0;
