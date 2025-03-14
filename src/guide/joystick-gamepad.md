@@ -46,6 +46,7 @@ bool Frame(Terreate::Context *ctx) {
      << " / Down: " << hatState.down << " / Left: " << hatState.left << std::endl;
 
   ctx->Swap();
+  return true;
 }
 
 int main() {
