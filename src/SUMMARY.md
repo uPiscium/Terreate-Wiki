@@ -13,7 +13,6 @@
 - [Assign shader variables](guide/assign-shader-vars.md)
 - [Use uniform buffers (UBO)](guide/use-ubo.md)
 - [Use shader storage buffers (SSBO)](guide/use-ssbo.md)
-- [Use multiple windows](guide/multiple-window.md)
 - [Use multi-thread executor](guide/executor.md)
 - [Hook with window callbacks](guide/window-callback.md)
 - [Handle audio](guide/audio.md)
