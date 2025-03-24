@@ -7,6 +7,7 @@ In this example, build outputs are stored in `<REPOSITRY ROOT DIR>/build/` folde
 ### with `direnv`
 ```shell
 cd <PATH TO CLONED/UNZIPPED REPOSITORY>
+mkdir build
 cmake -S . -B build
 cmake --build build
 ```
@@ -15,6 +16,7 @@ cmake --build build
 ```shell
 cd <PATH TO CLONED/UNZIPPED REPOSITORY>
 nix develop
+mkdir build
 cmake -S . -B build
 cmake --build build
 ```
@@ -23,6 +25,7 @@ cmake --build build
 **Make sure you have the [dependencies](./deps.md) installed before building.**
 ```shell
 cd <PATH TO CLONED/UNZIPPED REPOSITORY>
+mkdir build
 cmake -S . -B build
 cmake --build build
 ```
@@ -30,6 +33,7 @@ cmake --build build
 ## Windows
 ```shell
 cd <PATH TO CLONED/UNZIPPED REPOSITORY>
+mkdir build
 cmake -S . -B build
 cmake --build build
 ```
