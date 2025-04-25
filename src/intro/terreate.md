@@ -6,4 +6,5 @@ Welcome to the ***Terreate*** documentation. This documentation is intended to p
 
 # Let's start!
 Now, let's dive into the journey of `Terreate`!
-- [Next - Build Terreate](./build.md)
+
+- [*Next - Build dependencies*](./deps.md)
