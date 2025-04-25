@@ -38,4 +38,4 @@ Install packages below.
 ### with `pacman`
 Install `vulkan-devel` package.
 
-- [Next - Build project](./build.md)
+## [Next - Build project](./build.md)
