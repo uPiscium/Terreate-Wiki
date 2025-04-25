@@ -7,4 +7,5 @@ Welcome to the ***Terreate*** documentation. This documentation is intended to p
 # Let's start!
 Now, let's dive into the journey of `Terreate`!
 
+# Links
 - [*Next - Build dependencies*](./deps.md)
