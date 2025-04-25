@@ -3,3 +3,7 @@ Welcome to the ***Terreate*** documentation. This documentation is intended to p
 
 ## What is *Terreate*
 ***Terreate*** is a 3D game library for C++. This repository is designed for creating 3D games with `Vulkan`.
+
+# Let's start!
+Now, let's dive into the journey of `Terreate`!
+- [Next - Build Terreate](./build.md)
