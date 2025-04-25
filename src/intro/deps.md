@@ -38,4 +38,6 @@ Install packages below.
 ### with `pacman`
 Install `vulkan-devel` package.
 
-## [Next - Build project](./build.md)
+## Links
+- [*Prev - What is Terreate?*](./terreate.md)
+- [*Next - Build project*](./build.md)
