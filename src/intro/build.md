@@ -29,4 +29,6 @@ cmake -S . -B build
 cmake --build build
 ```
 
-## [Next - Create window](../guide/window.md)
+## Link
+- [Prev - Dependencies](./deps.md)
+- [Next - Create window](../guide/window.md)
