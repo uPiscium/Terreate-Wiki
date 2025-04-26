@@ -29,4 +29,4 @@ cmake -S . -B build
 cmake --build build
 ```
 
-## [Next - ***]()
+## [Next - Create window](../guide/window.md)
