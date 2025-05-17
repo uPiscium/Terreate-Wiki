@@ -1,42 +1,80 @@
 ## Library dependence
 Here's the packages that are used in this library.
 
-- [Vulkan](https://www.vulkan.org/)
-  > Vulkan is not a company, nor language, but rather a way for developers to program their modern GPU hardware in a cross-platform and cross-vendor fashion. The Khronos Group is a member-driven consortium that created and maintains Vulkan.\
-  *from Vulkan documentation*
-
 - [glfw](https://www.glfw.org/docs/latest/)
   > GLFW is a free, Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan application development. It provides a simple, platform-independent API for creating windows, contexts and surfaces, reading input, handling events, etc.\
   *from glfw website*
+
+- [glad](https://glad.dav1d.de/)
+  > Multi-Language GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specs.\
+  *from glad website*
 
 - [OpenAL-soft](https://github.com/kcat/openal-soft.git)
   > OpenAL Soft is an LGPL-licensed, cross-platform, software implementation of the OpenAL 3D audio API. It's forked from the open-sourced Windows version available originally from openal.org's SVN repository (now defunct). OpenAL provides capabilities for playing audio in a virtual 3D environment. Distance attenuation, doppler shift, and directional sound emitters are among the features handled by the API. More advanced effects, including air absorption, occlusion, and environmental reverb, are available through the EFX extension. It also facilitates streaming audio, multi-channel buffers, and audio capture.\
   *from OpenAL-soft README.md*
 
 ## Build dependence
-This library uses `cmake` to build the projects so make sure to install `cmake` before building this library. 
+This library uses `cmake` to build the projects so make sure to install `cmake` before building this library.
 
-### on Windows
-Install [Vulkan SDK](https://www.lunarg.com/vulkan-sdk/)
+### X11/Wayland dependence(*in Linux*)
+If you are using X11/Wayland environment, these packages are needed to build and execute.\
+(Package names might be different in package managers. The names listed below are example in **`apt`**)
+- libwayland-bin
+- libwayland-dev
+- wayland-protocols
+- libxkbcommon-dev
+- libx11-dev
+- libxrandr-dev
+- libxinerama-dev
+- libxcursor-dev
+- libxi-dev
 
-> [Vulkan tutorial - Development environment](https://vulkan-tutorial.com/Development_environment) explains how to set it up in detail.
+Note:
+> If you are using `nix` package manager and `direnv`, dependence installing is automatically executed.
 
-### with `apt`
-Install packages below.
-- vulkan-tools
-- libvulkan-dev
-- vulkan-validationlayers-dev
-- spirv-tools
+# How to build
+**Make sure you installed [cmake](https://cmake.org/) before building.**
+In this example, build outputs are stored in `<REPOSITRY ROOT DIR>/build/` folder.\
+(If you don't want to build tests, use `cmake -S . -B build -DBUILD_TERREATE_TEST=off` instead of `cmake -S . -B build` command.)
 
-### with `dnf`
-Install packages below.
-- vulkan-tools
-- vulkan-loader-devel
--  mesa-vulkan-devel
--  vulkan-validation-layers-devel
+## NixOS(or `nix` installed environment)
+### with `direnv`
+```shell
+cd <PATH TO CLONED/UNZIPPED REPOSITORY>
+cmake -S . -B build
+cmake --build build
+```
 
-### with `pacman`
-Install `vulkan-devel` package.
+### without `direnv`
+```shell
+cd <PATH TO CLONED/UNZIPPED REPOSITORY>
+nix develop
+cmake -S . -B build
+cmake --build build
+```
+
+## Linux
+**Make sure you installed [dependencies](#x11waylanddependence) before building.**
+```shell
+cd <PATH TO CLONED/UNZIPPED REPOSITORY>
+cmake -S . -B build
+cmake --build build
+```
+
+## Windows
+```shell
+cd <PATH TO CLONED/UNZIPPED REPOSITORY>
+cmake -S . -B build
+cmake --build build
+```
+
+## MacOS
+***Currently, MacOS is not officially supported.***
+```shell
+cd <PATH TO CLONED/UNZIPPED REPOSITORY>
+cmake -S . -B build
+cmake --build build
+```
 
 ## Links
 - [*Prev - What is Terreate?*](./terreate.md)
