@@ -10,11 +10,12 @@ First, we need to create a manager of `Terreate`, called `Context`. `Context` ma
 #include "Terreate/Terreate.hpp"
 
 int main() {
-  Terreate::Context context;
+  Terreate::Context context("Terreate guide", Terreate::Type::Version{0, 1, 0});
 
   return 0;
 }
 ```
+
 
 ## Create `Window`
 Next, we need to create a `Window` to represent our awesome app. `Window` is created by `createWindow()` function defined as `Context` class method.
