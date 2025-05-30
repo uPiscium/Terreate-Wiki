@@ -24,7 +24,7 @@ cmake --build build
 
 ## `nix` installed env
 ```shell
-nix develop // if you have direnv this line is not needed.
+nix develop // or `direnv allow` if you have direnv.
 cmake -S . -B build
 cmake --build build
 ```
