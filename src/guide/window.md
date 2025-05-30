@@ -16,16 +16,31 @@ int main() {
 }
 ```
 
-
 ## Create `Window`
-Next, we need to create a `Window` to represent our awesome app. `Window` is created by `createWindow()` function defined as `Context` class method.
+Next, we need to create a `Window` to represent our awesome app. Windows are created by the createWindow() function, which is a method of the Context class:
 ```cpp
 #include "Terreate/Terreate.hpp"
 
 int main() {
   Terreate::Context context("Terreate guide", Terreate::Type::Version{0, 1, 0});
 
-  auto window = context->createWindow("My first window", {700, 500});
+  auto window = context.createWindow("My first window", {700, 500});
+  // or
+  // Terreate::VkObj<Terreate::Window> window = context.createWindow("My first window", {700, 500});
+
+  return 0;
+}
+```
+
+# Create `Renderer`
+Now, we have window to represent contents, but don't have renderer to render it. So in this step, we will create a `Renderer`. Renderers are created by the createRenderer() function, which is a method of the Context class same as `Window`:
+```cpp
+#include "Terreate/Terreate.hpp"
+
+int main() {
+  Terreate::Context context("Terreate guide", Terreate::Type::Version{0, 1, 0});
+
+  auto window = context.createWindow("My first window", {700, 500});
 
   return 0;
 }
