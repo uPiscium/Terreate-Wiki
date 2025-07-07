@@ -2,7 +2,7 @@
 **Make sure you installed [cmake](https://cmake.org/) before building.**
 
 ## Build outputs
-In this example, build outputs are stored in `<REPOSITRY ROOT DIR>/build/` folder.\
+In this example, build outputs are stored in `<REPOSITRY ROOT DIR>/build/` folder.
 
 ## `Cmake` options
 ### `TERREATE_BUILD_TEST`
