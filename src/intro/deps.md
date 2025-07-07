@@ -33,14 +33,6 @@ If you are using X11/Wayland environment, these packages are needed to build and
 > [!NOTE]
 > If you are using `nix` package manager and `direnv`, dependence installing is automatically executed.
 
-# Build project
-> [!IMPORTANT]
-> **Make sure you installed [cmake](https://cmake.org/) before building.**
-
-## Build outputs
-In this example, build outputs are stored in `<REPOSITRY ROOT DIR>/build/` folder.\
-
-
 ## Links
 - [*Prev - What is Terreate?*](./terreate.md)
 - [*Next - Build project*](./build.md)
