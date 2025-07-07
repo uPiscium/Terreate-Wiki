@@ -1,4 +1,4 @@
-## Library dependence
+## Library dependency
 Here's the packages that are used in this library.
 
 - [SDL](https://www.libsdl.org/)
@@ -11,10 +11,13 @@ Here's the packages that are used in this library.
   > Multi-Language GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specs.\
   *from glad website*
 
-## Build dependence
-This library uses `cmake` to build the projects so make sure to install `cmake` before building this library.
+## Build Dependency
+This library uses `cmake` to build the projects so make sure to install `cmake` before building this library. 
 
-### X11/Wayland dependence(*in Linux*)
+### on Windows
+There is no additional dependence to build this library on Windows.
+
+### on Linux
 If you are using X11/Wayland environment, these packages are needed to build and execute.\
 (Package names might be different in package managers. The names listed below are example in **`apt`**)
 - libwayland-bin
@@ -27,52 +30,16 @@ If you are using X11/Wayland environment, these packages are needed to build and
 - libxcursor-dev
 - libxi-dev
 
-Note:
+> [!NOTE]
 > If you are using `nix` package manager and `direnv`, dependence installing is automatically executed.
 
-# How to build
-**Make sure you installed [cmake](https://cmake.org/) before building.**
+# Build project
+> [!IMPORTANT]
+> **Make sure you installed [cmake](https://cmake.org/) before building.**
+
+## Build outputs
 In this example, build outputs are stored in `<REPOSITRY ROOT DIR>/build/` folder.\
-(If you don't want to build tests, use `cmake -S . -B build -DBUILD_TERREATE_TEST=off` instead of `cmake -S . -B build` command.)
 
-## NixOS(or `nix` installed environment)
-### with `direnv`
-```shell
-cd <PATH TO CLONED/UNZIPPED REPOSITORY>
-cmake -S . -B build
-cmake --build build
-```
-
-### without `direnv`
-```shell
-cd <PATH TO CLONED/UNZIPPED REPOSITORY>
-nix develop
-cmake -S . -B build
-cmake --build build
-```
-
-## Linux
-**Make sure you installed [dependencies](#x11waylanddependence) before building.**
-```shell
-cd <PATH TO CLONED/UNZIPPED REPOSITORY>
-cmake -S . -B build
-cmake --build build
-```
-
-## Windows
-```shell
-cd <PATH TO CLONED/UNZIPPED REPOSITORY>
-cmake -S . -B build
-cmake --build build
-```
-
-## MacOS
-***Currently, MacOS is not officially supported.***
-```shell
-cd <PATH TO CLONED/UNZIPPED REPOSITORY>
-cmake -S . -B build
-cmake --build build
-```
 
 ## Links
 - [*Prev - What is Terreate?*](./terreate.md)
