@@ -30,8 +30,9 @@ If you are using X11/Wayland environment, these packages are needed to build and
 - libxcursor-dev
 - libxi-dev
 
-> [!NOTE]
-> If you are using `nix` package manager and `direnv`, dependence installing is automatically executed.
+<div class="warning">
+If you are using `nix` package manager and `direnv`, dependence installing is automatically executed.
+</div>
 
 ## Links
 - [*Prev - What is Terreate?*](./terreate.md)
