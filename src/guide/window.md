@@ -1,21 +1,20 @@
 ## Section overview
 - [x] Window representation
-- [x] Rendering with renderer
 - [x] Simple game loop
 
 In this section, we will create our first simplest application. It is only a blank black window.
 
 ## Create `Context`
-First, we need to create a manager of `Terreate`, called `Context`. `Context` manages the resources that are used in the program. The first thing we need to do is create a `Context` class instance:
+First, we need to create a manager of `Terreate`, called `Context`. `Context` is a manager for all resources or resource handlers that are used in the program. The first thing we need to do is create a `Context` class instance:
 ```cpp
 #include "Terreate/Terreate.hpp"
 
 int main() {
-  Terreate::Context context("Terreate guide", Terreate::Type::Version{0, 1, 0});
-
+  Terreate::Context context;
   return 0;
 }
 ```
+Once you execute the program above, you will see that the program immediately terminates and returns code 0.
 
 ## Create `Window`
 Next, we need to create a `Window` to represent our awesome app. Windows are created by the createWindow() function, which is a method of the Context class:
@@ -23,27 +22,38 @@ Next, we need to create a `Window` to represent our awesome app. Windows are cre
 #include "Terreate/Terreate.hpp"
 
 int main() {
-  Terreate::Context context("Terreate guide", Terreate::Type::Version{0, 1, 0});
+  Terreate::Context context;
 
-+ auto window = context.createWindow("My first window", {700, 500});
++ auto window = context.createWindow(700, 500, "My first window");
   // or
-  // Terreate::VkObj<Terreate::Window> window = context.createWindow("My first window", {700, 500});
+  // Terreate::shared<Terreate::Window> window = context.createWindow(700, 500, "My first window");
 
   return 0;
 }
 ```
+If you execute this code, you may see a black window for a moment.
 
-# Create `Renderer`
-Now, we have window to represent contents, but don't have renderer to render it. So in this step, we will create a `Renderer`. Renderers are created by the createRenderer() function, which is a method of the Context class same as `Window`:
+# Define *Mainloop*
+In the current code, we cannot see our awesome app due to the life time of the window. Now, we will add *Mainloop* that keeps the window and other objects in our app alive until the app terminates.
 ```diff
 #include "Terreate/Terreate.hpp"
 
 int main() {
-  Terreate::Context context("Terreate guide", Terreate::Type::Version{0, 1, 0});
+  Terreate::Context context;
 
-  auto window = context.createWindow("My first window", {700, 500});
-+ auto renderer = context. createRenderer();
+  auto window = context.createWindow(700, 500, "My first window");
+  // or
+  // Terreate::shared<Terreate::Window> window = context.createWindow(700, 500, "My first window");
+
++ while (context.valid()) {
++   window->fill(0.85, 0, 0);
++   window->clear();
+
++   window->update();
++   context.tick(120);
++ }
 
   return 0;
 }
 ```
+Now, we can see the black blank window in front of us!
