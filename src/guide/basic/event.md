@@ -63,5 +63,7 @@ int main() {
 ```
 This code outputs the mouse position when the mouse cursor is moved. Let's take a look at this step by step. First, we get a handler from context. Next, we define the callback for retrieving the event. The arguments of function is defined for each event type. This is shown in the [Event callback type documentation](../../docs/event/callback.md).
 Finally, we called `subscribe` to register the callback to event.
-> [Tips]
-> If you want to retrieve one of the event instances and not interested in other instances that comes after the retrieved event, you should use `trigger` instead of `subscribe`.
+
+<div class="warning">
+If you want to retrieve one of the event instances and not interested in other instances that comes after the retrieved event, you should use `trigger` instead of `subscribe`.
+</div>
