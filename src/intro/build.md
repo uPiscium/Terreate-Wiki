@@ -2,7 +2,7 @@
 **Make sure you installed [cmake](https://cmake.org/) before building.**
 
 ## Build outputs
-In this example, build outputs are stored in `<REPOSITRY ROOT DIR>/build/` folder.\
+In this example, build outputs are stored in `<REPOSITRY ROOT DIR>/build/` folder.
 
 ## `Cmake` options
 ### `TERREATE_BUILD_TEST`
@@ -24,7 +24,7 @@ cmake --build build
 
 ## `nix` installed env
 ```shell
-nix develop // if you have direnv this line is not needed.
+nix develop // or `direnv allow` if you have direnv.
 cmake -S . -B build
 cmake --build build
 ```

@@ -1,42 +1,38 @@
-## Library dependence
+## Library dependency
 Here's the packages that are used in this library.
 
-- [Vulkan](https://www.vulkan.org/)
-  > Vulkan is not a company, nor language, but rather a way for developers to program their modern GPU hardware in a cross-platform and cross-vendor fashion. The Khronos Group is a member-driven consortium that created and maintains Vulkan.\
-  *from Vulkan documentation*
+- [SDL](https://www.libsdl.org/)
+  > Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D. It is used by video playback software, emulators, and popular games including Valve's award winning catalog and many Humble Bundle games.
+  > SDL officially supports Windows, macOS, Linux, iOS, and Android. Support for other platforms may be found in the source code.
+  > SDL is written in C, works natively with C++, and there are bindings available for several other languages, including C# and Python.
+  > SDL is distributed under the zlib license. This license allows you to use SDL freely in any software.\
+  *from SDL website*
+- [glad](https://glad.dav1d.de/)
+  > Multi-Language GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specs.\
+  *from glad website*
 
-- [glfw](https://www.glfw.org/docs/latest/)
-  > GLFW is a free, Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan application development. It provides a simple, platform-independent API for creating windows, contexts and surfaces, reading input, handling events, etc.\
-  *from glfw website*
-
-- [OpenAL-soft](https://github.com/kcat/openal-soft.git)
-  > OpenAL Soft is an LGPL-licensed, cross-platform, software implementation of the OpenAL 3D audio API. It's forked from the open-sourced Windows version available originally from openal.org's SVN repository (now defunct). OpenAL provides capabilities for playing audio in a virtual 3D environment. Distance attenuation, doppler shift, and directional sound emitters are among the features handled by the API. More advanced effects, including air absorption, occlusion, and environmental reverb, are available through the EFX extension. It also facilitates streaming audio, multi-channel buffers, and audio capture.\
-  *from OpenAL-soft README.md*
-
-## Build dependence
+## Build Dependency
 This library uses `cmake` to build the projects so make sure to install `cmake` before building this library. 
 
 ### on Windows
-Install [Vulkan SDK](https://www.lunarg.com/vulkan-sdk/)
+There is no additional dependence to build this library on Windows.
 
-> [Vulkan tutorial - Development environment](https://vulkan-tutorial.com/Development_environment) explains how to set it up in detail.
+### on Linux
+If you are using X11/Wayland environment, these packages are needed to build and execute.\
+(Package names might be different in package managers. The names listed below are example in **`apt`**)
+- libwayland-bin
+- libwayland-dev
+- wayland-protocols
+- libxkbcommon-dev
+- libx11-dev
+- libxrandr-dev
+- libxinerama-dev
+- libxcursor-dev
+- libxi-dev
 
-### with `apt`
-Install packages below.
-- vulkan-tools
-- libvulkan-dev
-- vulkan-validationlayers-dev
-- spirv-tools
-
-### with `dnf`
-Install packages below.
-- vulkan-tools
-- vulkan-loader-devel
--  mesa-vulkan-devel
--  vulkan-validation-layers-devel
-
-### with `pacman`
-Install `vulkan-devel` package.
+<div class="warning">
+If you are using `nix` package manager and `direnv`, dependence installing is automatically executed.
+</div>
 
 ## Links
 - [*Prev - What is Terreate?*](./terreate.md)
