@@ -31,4 +31,4 @@ cmake --build build
 
 ## Link
 - [*Prev - Dependencies*](./deps.md)
-- [*Next - Create window*](../guide/window.md)
+- [*Next - Chapter1. The basic*](../guide/basic.md)
