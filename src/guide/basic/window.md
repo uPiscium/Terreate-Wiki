@@ -55,4 +55,5 @@ int main() {
 Now, we can see the black blank window in front of us!
 
 # Links
+- [*Prev - Index of "The basics"*](../basic.md)
 - [*Next - 1.2. Handle events*](./events.md)
