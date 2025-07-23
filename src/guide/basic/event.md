@@ -1,3 +1,4 @@
+# Handle events
 ## Section overview
 - [x] Use event handler of `Context`
 - [x] Retrieve window associated events via `Event`.
