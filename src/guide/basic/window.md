@@ -1,3 +1,4 @@
+# Create a window
 ## Section overview
 - [x] Window representation
 - [x] Simple game loop

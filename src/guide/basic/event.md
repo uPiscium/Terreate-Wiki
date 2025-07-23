@@ -1,3 +1,4 @@
+# Handle events
 ## Section overview
 - [x] Use event handler of `Context`
 - [x] Retrieve window associated events via `Event`.
@@ -43,7 +44,7 @@ int main() {
 `EventHandler` has various events that is essential to create applications like mouse, clipboard, keyboard, text input(including IME), and more! If you want to know more about the events, see [Event type documentation](../../docs/event/type.md) for more information.
 
 ## Subscribe to an event
-Earlier we got the event handler from the context, but this is not enough to get the event itself - in order to get the event, we need to register a callback with the event:
+Earlier we got the event handler from the context, but this is not enough to get the event itself - in order to get the event, we need to register a callback to the event:
 ```cpp
 #include <Terreate/Terreate.hpp>
 #include <iostream>
