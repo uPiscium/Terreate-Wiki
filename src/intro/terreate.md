@@ -8,6 +8,3 @@ If you want to know about the licensing, see [licensing section](./license.md).
 
 # Let's start!
 Now, let's dive into the journey of `Terreate`!
-
-# Links
-- [*Next - Build dependencies*](./deps.md)
