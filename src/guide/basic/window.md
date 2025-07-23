@@ -33,7 +33,7 @@ int main() {
 ```
 If you execute this code, you may see a black window for a moment.
 
-# Define *Mainloop*
+## Define *Mainloop*
 In the current code, we cannot see our awesome app due to the life time of the window. Now, we will add *Mainloop* that keeps the window and other objects in our app alive until the app terminates.
 ```cpp
 #include "Terreate/Terreate.hpp"
@@ -53,7 +53,3 @@ int main() {
 }
 ```
 Now, we can see the black blank window in front of us!
-
-# Links
-- [*Prev - Index of "The basics"*](../basic.md)
-- [*Next - 1.2. Handle events*](./events.md)

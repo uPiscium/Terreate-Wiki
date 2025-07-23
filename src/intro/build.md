@@ -28,7 +28,3 @@ nix develop // or `direnv allow` if you have direnv.
 cmake -S . -B build
 cmake --build build
 ```
-
-## Link
-- [*Prev - Dependencies*](./deps.md)
-- [*Next - Chapter1. The basic*](../guide/basic.md)
