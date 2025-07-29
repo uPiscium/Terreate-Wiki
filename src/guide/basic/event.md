@@ -66,5 +66,5 @@ This code outputs the mouse position when the mouse cursor is moved. Let's take 
 Finally, we called `subscribe` to register the callback to event.
 
 <div class="warning">
-If you want to retrieve one of the event instances and not interested in other instances that comes after the retrieved event, you should use `trigger` instead of `subscribe`.
+If you want to retrieve one of the event instances and not interested in other instances that comes after the retrieved event, you should use "trigger" instead of "subscribe".
 </div>
