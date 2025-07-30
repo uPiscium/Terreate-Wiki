@@ -43,7 +43,7 @@ int main() {
   ...
 
   while (context.valid()) {
-    window->fill(0.85, 0, 0);
+    window->fill(0, 0, 0);
     window->clear();
 
     window->update();
